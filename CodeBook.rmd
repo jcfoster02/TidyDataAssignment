@@ -1,13 +1,9 @@
 ---
-title: "CodeBook"
-author: "Julie Foster"
-date: "September 4, 2016"
-output: word_document
+#CodeBook
+###author: "Julie Foster
+###date: "September 4, 2016
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## Instructions for project:  
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit: 1) a tidy data set as described below, 2) a link to a Github repository with your script for performing the analysis, and 3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your available at the site where the data was obtained:  
@@ -47,22 +43,23 @@ Activity Files
 Data Files
 *	test/y_test.txt
 *	train/y_train.txt
-features.txt - Names of column variables in the data files.
-activity_labels.txt - Names of the activity labels in the activity files.
+
+* features.txt - Names of column variables in the data files.
+* activity_labels.txt - Names of the activity labels in the activity files.
 
 
 ##The run_analysis.R script:
 
 Step 1:   Merge the training and the test sets to create one data set:  "largeData"
 *	Download and uncompress the raw data zip directory
-*   Read in test datasets, renaming the column labels, cbind three tables into "testData".
+*       Read in test datasets, renaming the column labels, cbind three tables into "testData".
 *	Read in train datasets, renaming the column labels, cbind three tables into "trainData".
 *	Merge "testData" and "trainData", creating "largeData".  
 > dim(largeData)  
 [1] 10299   563  
 
-Step 2:   Extract the measurements on the mean and standard deviation for each measurement.
-*	Extract mean measurements into "meanData".
+Step 2:   Extract the measurements on the mean and standard deviation for each measurement.  
+*	Extract mean measurements into "meanData".  
 *	Extract std measurements into "stdData".
 *	Merge "largeData$subject", "largeData$activity", "meanData" and "stdData", creating "meanstdData".  
 > dim(meanData)  
@@ -90,5 +87,5 @@ Step 5:  From this dataset, create a second, independent tidy dataset with the a
 *	Merge by_act and by_subj to create new "avg_dataset"  
 > dim(avg_dataset)  
 [1] 77 36  
-*	Write "avg_dataset" to output file, "avg_dataset.csv".
+*	Write "avg_dataset" to output file, "avg_dataset.txt".
 

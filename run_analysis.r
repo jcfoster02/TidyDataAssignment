@@ -115,4 +115,4 @@ avg_dataset <- cbind(by_act, by_subj)
 dim(avg_dataset)
 
 # write "avg_dataset" to output file.
-write.csv(avg_dataset, file = "avg_dataset.csv")
+write.txt(avg_dataset, file = "avg_dataset.txt", row.name=FALSE)

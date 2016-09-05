@@ -1,23 +1,19 @@
 ---
-title: "README"
-author: "Julie Foster"
-date: "September 4, 2016"
-output: word_document
----
+#README
+###author: Julie Foster
+###date: September 4, 2016
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 ## Project summary: 
 
-The purpose of this project is to demonstrate the process of collecting, working with and cleaning a dataset.
+The purpose of this project is to demonstrate the process of collecting, working with and cleaning a dataset.  
 
 The dataset is from the Human Activity Recognition Using Smartphones at the University of California, Irvine, UCI, Machine Learning Repository. Data processing is achieved by means of the run_analysis.R script while CoodBook.md serves as a detailed Code Book for creating on output tidy dataset: avg_dataset.
  
 ****************
 ###Table of contents    
-*	README.md (this file)
+*	README.md (this file)  
 *	run_analysis.R
 *	CodeBook.md     
 
@@ -35,7 +31,7 @@ The "avg_dataset" contains:
 *	The table produces only one "kind" of variables.
 
 ##run_analysis.R:
-The "run_analysis.R" script processes the HARUS raw data to create the "avg_dataset" tidy dataset. The latter dataset is saved to the "avg_dataset.csv" file.  The script:
+The "run_analysis.R" script processes the HARUS raw data to create the "avg_dataset" tidy dataset. The latter dataset is saved to the "avg_dataset.txt" file.  The script:
 *	Downloads the raw dataset archive (.zip) file to the local working directory.
 *	Reads in the datasets, renames the columns, and merges them into the dataset,  "largeData".
 *	Extracts the mean measurements into "meanData" and std deviation measurements into "stdData", and merges them into the dataset, "meanstdData".
