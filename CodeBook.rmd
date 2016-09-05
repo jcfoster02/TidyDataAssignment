@@ -1,7 +1,7 @@
 ---
 #CodeBook
-###author: "Julie Foster
-###date: "September 4, 2016
+###author: Julie Foster
+###date: September 4, 2016
 ---
 
 
